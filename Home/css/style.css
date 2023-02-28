@@ -1,0 +1,261 @@
+.banner {
+  min-height: 864px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.banner-heading {
+  text-align: center;
+  margin-top: 80px;
+  z-index: 2;
+  width: fit-content;
+  letter-spacing: 0.2px;
+  line-height: 62px;
+}
+.video-holder {
+  margin-inline: 15px;
+  margin-top: 100px;
+  border: #ef7832 solid 4px;
+  border-radius: 15px;
+  width: 975px;
+  z-index: 2;
+  aspect-ratio: 1/0.5;
+}
+.banner-thumbnail {
+  width: 118px;
+  height: 115px;
+  position: absolute;
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  .banner {
+    margin-top: 20px;
+    padding-inline: 15px;
+    flex-direction: row;
+  }
+  :root {
+    --wfs-xl: 32px;
+  }
+  .banner-heading {
+    line-height: 50px;
+  }
+}
+@media (max-width: 784px) {
+  .banner {
+    flex-direction: column;
+    min-height: 400px;
+  }
+  :root {
+    --wfs-xl: 20px;
+  }
+  .banner-heading {
+    margin-top: 0px;
+    width: fit-content;
+    line-height: 30px;
+  }
+  .video-holder {
+    margin-top: 50px;
+    width: 90vw;
+  }
+}
+.event {
+  margin-top: 108px;
+  text-align: center;
+}
+.event p {
+  margin-bottom: 13px;
+}
+.venues p {
+  margin-bottom: 27px;
+}
+.total-information {
+  margin-top: 138px;
+  gap: 180px;
+}
+.total-information-item {
+  background-color: #ef7832;
+  width: 120px;
+  aspect-ratio: 1/1;
+}
+.total-information-item > img {
+  aspect-ratio: 1/1;
+  width: 57px;
+}
+.total-holder,
+.total-information-item {
+  place-items: center;
+}
+@media (max-width: 724px) {
+  .total-information {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .total-information-item {
+    width: 60px;
+  }
+  .total-information-item > img {
+    width: 28px;
+  }
+  :root {
+    --wfs-sm: 16px;
+  }
+  .event,
+  .venues {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+#sponsors {
+  margin-top: 132px;
+  background-color: #f1f1f1;
+  min-height: 666.44px;
+}
+.sponsors-content {
+  padding-top: 80px;
+  padding-inline: 15px;
+}
+.sponsors-brands {
+  margin-top: 70px;
+  display: grid;
+  place-items: center;
+}
+.show-more-brands {
+  color: white;
+  margin-top: 52px;
+  display: block;
+  padding: 9px 60px;
+  background: linear-gradient(to bottom, #ef7832 0%, #fed34b 100%);
+}
+.topgames-content {
+  margin-top: 80px;
+}
+.topgames-content > p {
+  margin-bottom: 190px;
+}
+.game .phone {
+  height: 600px;
+  width: 401.2px;
+}
+.game-description {
+  max-width: 570px;
+}
+.game-name {
+  font-size: 30px;
+  font-weight: 600;
+}
+.game-description {
+  font-size: 20px;
+  line-height: 30px;
+}
+.description > div > a > img {
+  width: 197px;
+  height: 64px;
+  object-fit: fill;
+  margin-left: -21px;
+}
+.game-logo {
+  max-width: 120px;
+  max-height: 120px;
+  aspect-ratio: 1/1;
+}
+.game-comment {
+  max-width: 331px;
+}
+.games {
+  gap: 326px;
+}
+@media (max-width: 1208px) {
+  .game .phone {
+    display: none;
+  }
+  .games {
+    gap: 100px;
+  }
+  .game-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .game-description {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 478px) {
+  .game-logo {
+    max-width: 100px;
+    max-height: 100px;
+    aspect-ratio: 1/1;
+  }
+  .game-comment {
+    max-width: 230px;
+  }
+}
+@media (max-width: 380px) {
+  .game-logo {
+    max-width: 70px;
+    max-height: 70px;
+    aspect-ratio: 1/1;
+  }
+  .game-comment {
+    max-width: 220px;
+  }
+}
+#service {
+  background-color: #02031d;
+}
+#service > p {
+  padding-top: 72px;
+}
+.service-details {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.service-title {
+  display: flex;
+  align-items: end;
+  font-size: 32px;
+  font-weight: 600px;
+}
+.service-description {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 570px;
+}
+.service-img {
+}
+.service-details {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 993px) {
+  .service-title {
+    font-size: 28px;
+  }
+  .service-description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 770px) {
+  .service-details {
+    display: grid;
+    color: white;
+  }
+  .service-img {
+    display: grid;
+    place-items: center;
+  }
+}
+.history-gamegeek {
+  padding-inline: 15px;
+  margin-top: 72px;
+  display: grid;
+  place-items: center;
+}

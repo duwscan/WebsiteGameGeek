@@ -1,0 +1,135 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button {
+  border: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* Font */
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+body {
+  font-family: 'Inter';
+  font-weight: 400;
+}
+:root {
+  --wfs-s: 16px;
+  --wfs-sm: 20px;
+  --wfs-md: 24px;
+  --wfs-lg: 32px;
+  --wfs-xl: 48px;
+  --wfw-title: 700;
+}
+.gradient-pr-color {
+  background: linear-gradient(to bottom, #ef7832 0%, #fed34b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.priamry-color {
+  color: #ef7832;
+}
+.wfs-s {
+  font-size: var(--wfs-s) !important;
+}
+.wfs-sm {
+  font-size: var(--wfs-sm) !important;
+}
+.wfs-md {
+  font-size: var(--wfs-md) !important;
+}
+.wfs-lg {
+  font-size: var(--wfs-lg) !important;
+}
+.wfs-xl {
+  font-size: var(--wfs-xl) !important;
+}
+.wfw-title {
+  font-weight: var(--wfw-title) !important;
+}
+.nav-item {
+  color: white;
+}
+.nav-item a {
+  color: inherit !important;
+}
+.navbar-active {
+  background: linear-gradient(to bottom, #ef7832 0%, #fed34b 100%) !important;
+  border-radius: 99px;
+  padding-inline: 2em;
+  color: black;
+}
+#header {
+  background-color: #02031d;
+}
+#footer {
+  padding-top: 100px;
+  color: white;
+  background-color: #02031d;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer .social {
+  gap: 18px;
+}
+.privacy {
+  margin-top: 150px;
+  padding-bottom: 90px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 4px 12px;
+  width: 80%;
+  line-height: 29px;
+  width: 249px;
+  display: block;
+  margin: 16px;
+  background-color: #d9d9d9;
+}
+.contact-form button {
+  padding: 3px 30px;
+  margin: 16px;
+}
+.contact-and-form {
+  gap: 30%;
+}
+@media (max-width: 535px) {
+  .contact-and-form {
+    flex-direction: column;
+  }
+}
