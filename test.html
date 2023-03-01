@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .wrapper-history-games {
+      display: flex;
+      /* transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg); */
+      height: 204px;
+      width: 1200px;
+    }
+    .curve-warper {
+      position: relative;
+    }
+    .up-curve {
+      position: absolute;
+      top: 0;
+      width: inherit;
+      height: inherit;
+    }
+    .down-curve {
+      position: absolute;
+      bottom: 5px;
+      width: inherit;
+      height: inherit;
+    }
+    .curve {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+      border: 4px solid black;
+      border-bottom: none;
+    }
+    .repesent-circle {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      align-items: center;
+    }
+    .curve-down {
+      border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+      border: solid 4px black;
+      border-top: 0;
+    }
+    .repesent-circle-up {
+      bottom: -6px;
+      right: -50px;
+    }
+    .repesent-circle-down {
+      right: -50px;
+      top: -6px;
+    }
+    .repesent-dot {
+      height: 24px;
+      width: 24px;
+      border-radius: 100%;
+      background-color: red;
+      z-index: 2;
+    }
+    .repesent-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: red;
+    }
+    .line {
+      height: 100px;
+      background-color: black;
+      width: 3px;
+    }
+    .games-history-content {
+      position: absolute;
+      text-align: center;
+      width: 70%;
+      background-color: white;
+      border: solid 4px red;
+      border-radius: 1rem;
+      right: -70px;
+      z-index: 1;
+      /* transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg); */
+    }
+    .up-content {
+      position: absolute;
+      bottom: -155px;
+      text-align: center;
+    }
+    .down-content {
+      position: absolute;
+      top: -155px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="wrapper-history-games">
+      <div class="curve-warper">
+        <div class="up-curve">
+          <div class="up-content games-history-content">
+            <h3>2017</h3>
+            <p>55 User</p>
+            <p>12 Digital Games</p>
+            <p>3 Board games</p>
+          </div>
+          <div class="curve">
+            <div class="repesent-circle repesent-circle-up">
+              <div class="repesent-icon"></div>
+              <div class="line"></div>
+              <div class="repesent-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curve-warper" style="margin-left: 200px">
+        <div class="down-curve">
+          <div class="down-content games-history-content">
+            <h3>2017</h3>
+            <p>55 User</p>
+            <p>12 Digital Games</p>
+            <p>3 Board games</p>
+          </div>
+          <div class="curve curve-down">
+            <div class="repesent-circle repesent-circle-down">
+              <div class="repesent-dot"></div>
+              <div class="line"></div>
+              <div class="repesent-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curve-warper" style="margin-left: 200px">
+        <div class="up-curve">
+          <div class="curve">
+            <div class="repesent-circle repesent-circle-up">
+              <div class="repesent-icon"></div>
+              <div class="line"></div>
+              <div class="repesent-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curve-warper" style="margin-left: 200px">
+        <div class="down-curve">
+          <div class="curve curve-down">
+            <div class="repesent-circle repesent-circle-down">
+              <div class="repesent-dot"></div>
+              <div class="line"></div>
+              <div class="repesent-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
