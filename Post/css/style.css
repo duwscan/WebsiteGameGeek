@@ -1,0 +1,93 @@
+.content-box {
+  min-height: 100vh;
+  height: fit-content;
+  background-image: url('https://hdqwalls.com/wallpapers/firewatch-game.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.warpper-post {
+  padding: 15px;
+  padding-top: 0;
+  height: 100%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+.warpper-post .navbar {
+  width: 100%;
+  overflow: hidden;
+}
+.warpper-post .nav-item a {
+  color: black !important;
+}
+.warpper-post .navbar-toggler {
+  color: black !important;
+}
+.post {
+  border: 1px solid rgba(204, 204, 204, 0.75);
+  min-height: 500px;
+}
+.post-content {
+  padding: 60px;
+}
+.post-author-infomation {
+  font-size: 14px;
+}
+.post-author-infomation ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  list-style: none;
+  gap: 10px;
+}
+.post-author-infomation ul li {
+  position: relative;
+  padding-left: 12px;
+}
+.post-author-infomation ul li:nth-child(1)::before {
+  content: '';
+}
+.post-author-infomation ul li::before {
+  content: '\2022'; /* Add bullet point */
+  position: absolute;
+  left: 0;
+}
+.post-title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5px;
+}
+.post-footer {
+  margin-top: 50px;
+  border-top: 1px solid rgba(204, 204, 204, 0.75);
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.post-footer a {
+  display: block;
+  padding-top: 20px;
+  text-decoration: none;
+  color: black !important;
+}
+.post-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 748px) {
+  .post-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .warpper-post {
+    width: 100%;
+  }
+}
