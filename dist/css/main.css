@@ -133,3 +133,6 @@ body {
     flex-direction: column;
   }
 }
+.navbar-toggler {
+  color: white !important;
+}
