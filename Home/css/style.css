@@ -166,11 +166,19 @@
   max-height: 120px;
   aspect-ratio: 1/1;
 }
-.game-comment {
+.comment-game {
   max-width: 331px;
+  font-weight: 600;
+}
+.comment-game > p {
+  margin-bottom: 0.2rem !important;
 }
 .games {
   gap: 326px;
+  padding-bottom: 50px !important;
+}
+.ratings-star svg {
+  fill: yellow;
 }
 @media (max-width: 1208px) {
   .game .phone {
@@ -187,6 +195,9 @@
     font-size: 13px;
     line-height: 20px;
   }
+  .topgames-content > p {
+    margin-bottom: 100px;
+  }
 }
 @media (max-width: 478px) {
   .game-logo {
@@ -197,6 +208,9 @@
   .game-comment {
     max-width: 230px;
   }
+  .topgames-content > p {
+    margin-bottom: 90px;
+  }
 }
 @media (max-width: 380px) {
   .game-logo {
@@ -206,6 +220,9 @@
   }
   .game-comment {
     max-width: 220px;
+  }
+  .topgames-content > p {
+    margin-bottom: 50px;
   }
 }
 #service {
@@ -418,6 +435,11 @@
   .banner-thumbnail {
     display: none;
   }
+}
+.dowload-holder {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .dowload-holder .appstore svg {
   display: block;
