@@ -126,7 +126,7 @@ body {
   margin: 16px;
 }
 .contact-and-form {
-  gap: 30%;
+  justify-content: space-between;
 }
 @media (max-width: 535px) {
   .contact-and-form {
